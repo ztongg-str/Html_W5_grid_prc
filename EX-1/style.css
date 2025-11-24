@@ -1,0 +1,40 @@
+/* Styling only */
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #333333;
+  color: #444;
+  padding: 10px;
+  
+  height: 100vh;
+}
+
+.item {
+  background-color: #3092d7;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 1em;
+}
+
+/* Layouting only  (your work)*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+}
+.a{
+  grid-column: 1/4;
+}
+.b{
+  grid-row: 2/4;
+}
+.e{
+  grid-column: 2/4;
+}
+.f{
+  grid-column: 1/4;
+}
