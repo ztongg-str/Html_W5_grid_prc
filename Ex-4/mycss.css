@@ -89,6 +89,7 @@
     /* MAIN */
     .main {
         grid-area: main;
+        background-color: #5ab06e;
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -123,7 +124,7 @@
     .bar {
         flex: 1;
         /*Take equal space compared to other bars.*/
-        background: #5ab06e;
+        /* background: #5ab06e; */
         border-radius: 3px;
         height: 50%;
         /*This line help when we want to create a bigger graph*/
@@ -135,7 +136,7 @@
         justify-content: space-around;
     }
 
-    @media (max-width: 700px) {
+    @media (min-width: 700px) {
         .container {
             grid-template-areas:
                 "header"
@@ -147,12 +148,12 @@
         .sidebar {
             display: flex;
             overflow-x: auto;
-            /* makes sidebar scroll horizontally */
+            /* makes sidebar scrll horizontally */
         }
     }
 
 
-    @media (max-width: 1024px) {
+    @media (min-width: 1024px) {
         .container {
             grid-template-areas:
                 "sidebar header"
